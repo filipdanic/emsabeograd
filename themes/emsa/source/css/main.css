@@ -1,0 +1,161 @@
+body {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora', serif;
+  color: #333;
+  background: #fefefe;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: poppins, sans-serif;
+}
+
+header {
+  background: #181d4d;
+  padding: 0 48px;
+  margin-bottom: 24px;
+  min-height: 180px;
+}
+
+footer {
+  background: #181d4d;
+  padding: 24px 48px;
+}
+
+footer a,
+footer p {
+  display: block;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+footer p {
+  opacity: 0.75;
+}
+
+header .wrapper {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  flex-direction: column;
+}
+
+.brand {
+  display: flex;
+}
+
+.brand h1 {
+  color: #fff;
+}
+
+.brand img {
+  height: 84px;
+  padding: 12px;
+}
+
+.navigation {
+  flex-grow: 1;
+}
+
+.navigation ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navigation li {
+  list-style: none;
+  margin: 0 0 0 2em;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.primary-link {
+  text-decoration: none;
+  background: #f9992b;
+  padding: 12px 24px;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 700;
+  font-family: poppins, sans-serif;
+  transition: 180ms all;
+}
+
+.primary-link:hover {
+  background: #181d4d;
+}
+
+.main-body-content {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.card  {
+  margin: 0 12px 24px 0;
+  max-width: 400px;
+}
+
+.flex-container {
+  margin-bottom: 24px;
+}
+
+.pillars-section .card-img {
+  width: 200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.pillars-section .card-header {
+  min-height: 60px;
+}
+
+.pillars-section-slider .card {
+  margin: 24px;
+}
+
+.activity-section .card-footer {
+  font-size: 14px;
+  font-family: poppins, sans-serif;
+  opacity: 0.6;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+}
+
+.partners-section {
+  text-align: center;
+}
+
+.partners-section img {
+  height: 64px;
+  padding: 16px;
+}
+
+.text-section {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.spacer {
+  height: 12px;
+  width: 100%;
+}
+
+.content-center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.slick-prev.slick-disabled::before, .slick-next.slick-disabled::before {
+  color: black;
+}
+
+.slick-prev::before, .slick-next::before {
+  color: black;
+}

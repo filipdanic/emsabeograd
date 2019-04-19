@@ -1,0 +1,154 @@
+<%- partial('header') %>
+
+<div class="main-body-content">
+  <div class="text-section">
+    <p>Evropska asocijacija studenata medicine (EMSA) je neprofitna, nevladina organizacija koja predstavlja studente medicine iz cele Evrope. Osnovana 1990. godine u Briselu, jedini je glas studenata u Evropskim medicinskim organizacijama.</p>
+    <p>Organizacija pruža platformu za aktivnosti, projekte, obuke, radionice i međunarodne sastanke. Aktivnosti se okupljaju oko medicinske edukacije, medicinske etike i ljudskih prava, zdravstvene politike, javnog zdravlja, medicinskih nauka i evropskih integracija i kulture.</p>
+  </div>
+  <div class="spacer"></div>
+  <div class="content-center">
+    <a href="/kontakt" class="primary-link">Priključi se!</a>
+  </div>
+  <div class="spacer"></div>
+
+  <div class="text-section">
+    <h2>Aktivnosti</h2>
+  </div>
+  <div class="flex-container">
+    <div class="row activity-section">
+      <div class="column xlarge-6 small-12">
+        <div class="card card-hover">
+          <div class="card-header">
+            <h4>EMSA na 32. Beogradskom maratonu</h4>
+          </div>
+          <div class="card-img">
+            <img src="/images/photos/beogradski_maraton_2019.jpg" />
+          </div>
+          <div class="card-footer">
+            <p>15. april 2019. godine</p>
+          </div>
+        </div>
+      </div>
+      <div class="column xlarge-6 small-12">
+        <div class="card card-hover">
+          <div class="card-header">
+            <h4>Značaj poznavanja savetodavnog rada sa pacijentima</h4>
+          </div>
+          <div class="card-img">
+            <img src="/images/photos/radionica_savetodavanja.jpg" />
+          </div>
+          <div class="card-footer">
+            <p>5. april 2019. godine</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-section">
+    <div class="content-center">
+      <a href="#" class="primary-link">Još aktivnosti…</a>
+    </div>
+    <div class="spacer"></div>
+  </div>
+
+  <div class="text-section">
+    <h2>Komiteti</h2>
+  </div>
+  <div class="pillars-section pillars-section-slider">
+    <div class="card card-no-footer card-hover">
+      <div class="card-header">
+        <h4>Medicinska nauka</h4>
+      </div>
+      <div class="card-img">
+        <img src="/images/icons/nauka.png" />
+      </div>
+    </div>
+    <div class="card card-no-footer card-hover">
+      <div class="card-header">
+        <h4>Javno zdravlje</h4>
+      </div>
+      <div class="card-img">
+        <img src="/images/icons/zdravlje.png" />
+      </div>
+    </div>
+    <div class="card card-no-footer card-hover">
+      <div class="card-header">
+        <h4>Evropska integracija i kultura</h4>
+      </div>
+      <div class="card-img">
+        <img src="/images/icons/kultura.png" />
+      </div>
+    </div>
+    <div class="card card-no-footer card-hover">
+      <div class="card-header">
+        <h4>Medicinska edukacija</h4>
+      </div>
+      <div class="card-img">
+        <img src="/images/icons/studije.png" />
+      </div>
+    </div>
+    <div class="card card-no-footer card-hover">
+      <div class="card-header">
+        <h4>Evropska zdravstvena politika</h4>
+      </div>
+      <div class="card-img">
+        <img src="/images/icons/polise.png" />
+      </div>
+    </div>
+    <div class="card card-no-footer card-hover">
+      <div class="card-header">
+        <h4>Medicinska etika i ljudska prava</h4>
+      </div>
+      <div class="card-img">
+        <img src="/images/icons/prava.png" />
+      </div>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="text-section">
+    <h2>Partneri</h2>
+  </div>
+  <div class="flex-container">
+    <div class="row partners-section">
+      <img src="/images/logos/zzzzs.png" />
+      <img src="/images/logos/batut.jpg" />
+      <img src="/images/logos/bcell.png" />
+      <img src="/images/logos/healthtech.jpg" />
+    </div>
+  </div>
+  <div class="flex-container">
+    <div class="row partners-section">
+      <img src="/images/logos/bpsa.jpg" />
+      <img src="/images/logos/krug.jpg" />
+      <img src="/images/logos/belmedic.png" />
+      <img src="/images/logos/norbs.png" />
+      <img src="/images/logos/usop.jpg" />
+    </div>
+  </div>
+</div>
+
+<%- partial('footer') %>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.pillars-section-slider').slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true
+          }
+        },
+      ]
+    });
+  });
+</script>
