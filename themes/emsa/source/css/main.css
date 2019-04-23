@@ -59,6 +59,12 @@ header .wrapper {
   padding: 12px;
 }
 
+@media (max-width: 600px) {
+  .brand h1 {
+    font-size: 1.4em;
+  }
+}
+
 .navigation {
   flex-grow: 1;
 }
@@ -120,16 +126,23 @@ header .wrapper {
   margin-bottom: 24px;
 }
 
+.activity-section .card-img {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 24px;
+}
 .pillars-section .card-img {
   width: 200px;
   margin: 0 auto;
   padding: 24px;
 }
 
+.activity-section .card-header,
 .pillars-section .card-header {
   min-height: 60px;
 }
 
+.activity-section-slider .card,
 .pillars-section-slider .card {
   margin: 24px;
 }
@@ -138,10 +151,18 @@ header .wrapper {
   color: #333;
 }
 
+.activity-section-slider .card-footer,
 .activity-section .card-footer {
   font-size: 14px;
   opacity: 0.6;
   padding: 0.5rem 0 0.5rem 1.5rem;
+}
+
+@media (max-width: 400px) {
+  .activity-section .card-img {
+    max-width: 250px;
+    padding: 12px;
+  }
 }
 
 .partners-section {
@@ -189,4 +210,22 @@ header .wrapper {
 
 .slick-prev::before, .slick-next::before {
   color: black;
+}
+
+@media (max-width: 420px) {
+  .slick-slider {
+    max-width: 380px !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .slick-slider {
+    max-width: 340px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .slick-slider {
+    max-width: 330px !important;
+  }
 }

@@ -14,43 +14,62 @@
   <div class="text-section">
     <h2>Aktivnosti</h2>
   </div>
-  <div class="flex-container">
-    <div class="row activity-section">
-      <div class="column xlarge-6 small-12">
-        <div class="card card-hover">
-          <div class="card-header">
-            <h4>EMSA na 32. Beogradskom maratonu</h4>
-          </div>
-          <div class="card-img">
-            <img src="/images/photos/beogradski_maraton_2019.jpg" />
-          </div>
-          <div class="card-footer">
-            <p>15. april 2019. godine</p>
-          </div>
+  <div class="activity-section activity-section-slider">
+      <div class="card card-hover">
+        <div class="card-header">
+          <h4>EMSA na 32. Beogradskom maratonu</h4>
+        </div>
+        <div class="card-img">
+          <img src="/images/photos/2019/beogradski_maraton_2019.jpg" />
+        </div>
+        <div class="card-footer">
+          <p>15. april 2019. godine</p>
         </div>
       </div>
-      <div class="column xlarge-6 small-12">
-        <div class="card card-hover">
-          <div class="card-header">
-            <h4>Značaj poznavanja savetodavnog rada sa pacijentima</h4>
-          </div>
-          <div class="card-img">
-            <img src="/images/photos/radionica_savetodavanja.jpg" />
-          </div>
-          <div class="card-footer">
-            <p>5. april 2019. godine</p>
-          </div>
+
+      <div class="card card-hover">
+        <div class="card-header">
+          <h4>Značaj poznavanja savetodavnog rada sa pacijentima</h4>
+        </div>
+        <div class="card-img">
+          <img src="/images/photos/2019/radionica_savetodavanja.jpg" />
+        </div>
+        <div class="card-footer">
+          <p>5. april 2019. godine</p>
         </div>
       </div>
-    </div>
+
+      <div class="card card-hover">
+        <div class="card-header">
+          <h4>Dan Studenata (Studentski Dom)</h4>
+        </div>
+        <div class="card-img">
+          <img src="/images/photos/2019/dan_studenata.jpg" />
+        </div>
+        <div class="card-footer">
+          <p>2. april 2019. godine</p>
+        </div>
+      </div>
+
+      <div class="card card-hover">
+        <div class="card-header">
+          <h4>Obeležavanje Svetskog dana borbe protiv raka</h4>
+        </div>
+        <div class="card-img">
+          <img src="/images/photos/2019/dan_borbe_protiv_raka.jpg" />
+        </div>
+        <div class="card-footer">
+          <p>4. februar 2019. godine</p>
+        </div>
+      </div>
   </div>
 
-  <div class="text-section">
-    <div class="content-center">
-      <a href="#" class="primary-link">Još aktivnosti…</a>
-    </div>
-    <div class="spacer"></div>
-  </div>
+  <!--<div class="text-section">-->
+    <!--<div class="content-center">-->
+      <!--<a href="#" class="primary-link">Još aktivnosti…</a>-->
+    <!--</div>-->
+    <!--<div class="spacer"></div>-->
+  <!--</div>-->
 
   <div class="text-section">
     <h2>Komiteti</h2>
@@ -152,6 +171,22 @@
 <script type="text/javascript">
   $(document).ready(function(){
     $('.pillars-section-slider').slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true
+          }
+        },
+      ]
+    });
+    $('.activity-section-slider').slick({
       dots: true,
       infinite: false,
       speed: 300,
