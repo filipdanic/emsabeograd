@@ -89,12 +89,13 @@ header .wrapper {
 
 .sticky-sub-navigation {
   display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .sticky-sub-navigation a {
   flex: 1;
-  font-size: 0.85em;
-  padding: 6px 12px;
+  margin-bottom: 12px;
 }
 
 .primary-link {
