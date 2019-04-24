@@ -79,7 +79,7 @@ header .wrapper {
 
 .navigation li {
   list-style: none;
-  margin: 0 0 0 2em;
+  margin: 0 2em 0 0em;
 }
 
 .navigation a {
